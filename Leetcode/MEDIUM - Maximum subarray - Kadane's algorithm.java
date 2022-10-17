@@ -45,7 +45,7 @@ class Solution {
             
             currSum = currSum + nums[i];
               
-            if(maxSum < currSum){
+            if(currSum > maxSum ){
                 maxSum = currSum;
             } 
             
