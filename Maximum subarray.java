@@ -34,6 +34,7 @@ Constraints:
 
 //refer this video : https://www.youtube.com/watch?v=HCL4_bOd3-4
 
+//solved using Kadanes's algorithm
 
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -48,7 +49,7 @@ class Solution {
                 maxSum = currSum;
             } 
             
-            if(currSum < 0){
+            if(currSum < 0){ // if currSum is negative then neglect that substring, start from next element onwards
                 currSum = 0;
             }    
         }
